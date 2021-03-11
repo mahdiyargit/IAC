@@ -13,6 +13,8 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -32,8 +34,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GH_IO, Version=7.1.20343.9490, Culture=neutral, PublicKeyToken=6a29997d2e6b4f97, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grasshopper.7.1.20343.9491\lib\net45\GH_IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Grasshopper, Version=7.1.20343.9490, Culture=neutral, PublicKeyToken=dda4f5ec2cd80803, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grasshopper.7.1.20343.9491\lib\net45\Grasshopper.dll</HintPath>
+    </Reference>
     <Reference Include="MathNet.Numerics, Version=4.15.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MathNet.Numerics.4.15.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.UI, Version=7.1.20343.9490, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
+      <HintPath>..\packages\RhinoCommon.7.1.20343.9491\lib\net45\Rhino.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RhinoCommon, Version=7.1.20343.9490, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
+      <HintPath>..\packages\RhinoCommon.7.1.20343.9491\lib\net45\RhinoCommon.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,32 +60,22 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="RhinoCommon">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Rhino 7\System\RhinoCommon.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Grasshopper">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Rhino 7\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="GH_IO">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Rhino 7\Plug-ins\Grasshopper\GH_IO.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GrasshopperComponents\BaseConverterGhc.cs" />
-    <Compile Include="GrasshopperComponents\LCMGCDGhc.cs" />
-    <Compile Include="GrasshopperComponents\IsPrimeGhc.cs" />
-    <Compile Include="GrasshopperComponents\PrimesInDomainGhc.cs" />
-    <Compile Include="GrasshopperComponents\SeamlessDiamondGhc.cs" />
-    <Compile Include="GrasshopperComponents\SurfaceSeamGhc.cs" />
+    <Compile Include="GrasshopperComponents\Curve\InfMaxCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\Math\BaseConverterGhc.cs" />
+    <Compile Include="GrasshopperComponents\Math\LCMGCDGhc.cs" />
+    <Compile Include="GrasshopperComponents\Math\IsPrimeGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubD\ToSubDFriendlyCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\Math\PrimesInDomainGhc.cs" />
+    <Compile Include="GrasshopperComponents\Surface\SeamlessDiamondGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubD\SubDFriendlyCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\Surface\SurfaceSeamGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubD\IsSubDFriendlySrfGhc.cs" />
     <Compile Include="IACCategoryIcon.cs" />
     <Compile Include="IACInfo.cs" />
-    <Compile Include="GrasshopperComponents\PrimeFactorizationGhc.cs" />
+    <Compile Include="GrasshopperComponents\Math\PrimeFactorizationGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubD\IsSubDFriendlyCrvGhc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -108,6 +114,18 @@
   <ItemGroup>
     <None Include="Resources\LCMGCD.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isSubDFriendly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primeInDomain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toSubDfrendly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seamlessDiamondPanel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -129,4 +147,13 @@ Erase "$(TargetPath)"</PostBuildEvent>
     </StartArguments>
     <StartAction>Program</StartAction>
   </PropertyGroup>
+  <Import Project="..\packages\RhinoCommon.7.1.20343.9491\build\RhinoCommon.targets" Condition="Exists('..\packages\RhinoCommon.7.1.20343.9491\build\RhinoCommon.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\RhinoCommon.7.1.20343.9491\build\RhinoCommon.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\RhinoCommon.7.1.20343.9491\build\RhinoCommon.targets'))" />
+    <Error Condition="!Exists('..\packages\Grasshopper.7.1.20343.9491\build\Grasshopper.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grasshopper.7.1.20343.9491\build\Grasshopper.targets'))" />
+  </Target>
+  <Import Project="..\packages\Grasshopper.7.1.20343.9491\build\Grasshopper.targets" Condition="Exists('..\packages\Grasshopper.7.1.20343.9491\build\Grasshopper.targets')" />
 </Project>

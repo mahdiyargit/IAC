@@ -19,11 +19,11 @@ namespace IAC
             pManager.AddIntegerParameter("PrimeNumbers", "P", "All prime numbers in the given interval",
                 GH_ParamAccess.list);
         }
-        protected override void SolveInstance(IGH_DataAccess DA)
+        protected override void SolveInstance(IGH_DataAccess da)
         {
             var interval = Interval.Unset;
-            if (!DA.GetData(0, ref interval) || !interval.IsValid) return;
-            DA.SetDataList(0, GeneratePrimes(interval));
+            if (!da.GetData(0, ref interval) || !interval.IsValid) return;
+            da.SetDataList(0, GeneratePrimes(interval));
         }
         public static List<GH_Integer> GeneratePrimes(Interval interval)
         {
@@ -34,7 +34,7 @@ namespace IAC
                     select i;
             return interval.IsIncreasing ? r.OrderBy(p => p).Select(p => new GH_Integer(p)).ToList() : r.OrderByDescending(p => p).Select(p => new GH_Integer(p)).ToList();
         }
-        protected override System.Drawing.Bitmap Icon => null;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.primeInDomain;
         public override Guid ComponentGuid => new Guid("0eeb1f90-862d-40e4-b8ba-b2b39c459f68");
     }
 }

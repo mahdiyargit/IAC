@@ -133,7 +133,7 @@ namespace IAC
             DA.SetDataList(0, diamonds);
             DA.SetDataList(1, triangles);
         }
-        protected override System.Drawing.Bitmap Icon => null;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.seamlessDiamondPanel;
         public override Guid ComponentGuid => new Guid("1df548a9-5e91-4a4e-b784-49ed348d8d78");
     }
 }

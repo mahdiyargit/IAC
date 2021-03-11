@@ -103,6 +103,16 @@ namespace IAC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap isSubDFriendly {
+            get {
+                object obj = ResourceManager.GetObject("isSubDFriendly", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LCMGCD {
             get {
                 object obj = ResourceManager.GetObject("LCMGCD", resourceCulture);
@@ -123,9 +133,39 @@ namespace IAC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap primeInDomain {
+            get {
+                object obj = ResourceManager.GetObject("primeInDomain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seamlessDiamondPanel {
+            get {
+                object obj = ResourceManager.GetObject("seamlessDiamondPanel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap srfSeam {
             get {
                 object obj = ResourceManager.GetObject("srfSeam", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap toSubDfrendly {
+            get {
+                object obj = ResourceManager.GetObject("toSubDfrendly", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

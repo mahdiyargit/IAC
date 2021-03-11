@@ -70,7 +70,7 @@ namespace IAC
                 da.SetData(0, FromDecimal(str, to));
                 return;
             }
-            str = ToDecimal(str, from).ToString("f20").Trim('0');
+            str = ToDecimal(str, from).ToString("f20").Trim('0').Trim('.');
             da.SetData(0, FromDecimal(str, to));
         }
         private static bool IsValid(string str, int radix)
@@ -80,10 +80,7 @@ namespace IAC
             if (str.IndexOf('.') != -1)
                 str = str.Remove(str.IndexOf('.'), 1);
             var digits = Digits.Substring(0, radix);
-            foreach (var c in str)
-                if (digits.IndexOf(c) == -1)
-                    return false;
-            return true;
+            return str.All(c => digits.IndexOf(c) != -1);
         }
 
         public static double ToDecimal(string str, int radix)

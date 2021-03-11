@@ -1,5 +1,4 @@
 ﻿using Grasshopper.Kernel;
-
 namespace IAC
 {
     public class IAC : GH_AssemblyPriority
