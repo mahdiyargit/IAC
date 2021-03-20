@@ -1,7 +1,7 @@
 ﻿using Grasshopper.Kernel;
 using System;
 
-namespace IAC
+namespace IAC.GrasshopperComponents.MathGhc
 {
     public class IsPrimeGhc : GH_Component
     {
@@ -25,7 +25,7 @@ namespace IAC
         {
             if (n < 2) return false;
             if (n % 2 == 0) return n == 2;
-            var root = (int)Math.Sqrt(n);
+            var root = (int)System.Math.Sqrt(n);
             for (var i = 3; i <= root; i += 2)
                 if (n % i == 0) return false;
             return true;

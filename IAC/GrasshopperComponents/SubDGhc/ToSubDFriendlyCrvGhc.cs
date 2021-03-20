@@ -2,7 +2,7 @@
 using Rhino.Geometry;
 using System;
 
-namespace IAC.GrasshopperComponents
+namespace IAC.GrasshopperComponents.SubDGhc
 {
     public class ToSubDFriendlyCrvGhc : GH_Component
     {
@@ -13,7 +13,7 @@ namespace IAC.GrasshopperComponents
         {
             pManager.AddCurveParameter("Curve", "C", "Curve", GH_ParamAccess.item);
             pManager.AddIntegerParameter("Point count", "N",
-                "Desired number of control points. If periodicClosedCurve is true,\nthe number must be >= 6, otherwise the number must be >= 4.", GH_ParamAccess.item);
+                "Optional desired number of control points. If periodicClosedCurve is true,\nthe number must be >= 6, otherwise the number must be >= 4.", GH_ParamAccess.item);
             pManager[1].Optional = true;
         }
         protected override void RegisterOutputParams(GH_OutputParamManager pManager)
@@ -32,7 +32,6 @@ namespace IAC.GrasshopperComponents
                 return;
             }
             da.SetData(0, output);
-
         }
         protected override System.Drawing.Bitmap Icon => Properties.Resources.toSubDfrendly;
         public override Guid ComponentGuid => new Guid("032cb201-6472-4588-9a11-05cc77182025");

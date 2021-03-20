@@ -1,6 +1,7 @@
 ﻿using Grasshopper.Kernel;
 using System;
-namespace IAC.GrasshopperComponents.Surface
+
+namespace IAC.GrasshopperComponents.SubDGhc
 {
     public class IsSubDFriendlySrfGhc : GH_Component
     {
@@ -24,6 +25,7 @@ namespace IAC.GrasshopperComponents.Surface
             da.SetData(0, srf.IsSubDFriendly);
         }
         protected override System.Drawing.Bitmap Icon => null;
+        public override GH_Exposure Exposure => GH_Exposure.secondary;
         public override Guid ComponentGuid => new Guid("c691b0bd-7ccb-4fb1-bb35-4a863d1ce437");
     }
 }

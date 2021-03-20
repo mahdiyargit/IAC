@@ -2,7 +2,8 @@
 using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
-namespace IAC
+
+namespace IAC.GrasshopperComponents.SurfaceGhc
 {
     public class SeamlessDiamondGhc : GH_Component
     {

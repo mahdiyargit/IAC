@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
-namespace IAC.GrasshopperComponents
+namespace IAC.GrasshopperComponents.CurveGhc
 {
     public class InfMaxCrvGhc : GH_Component
     {
@@ -58,7 +58,7 @@ namespace IAC.GrasshopperComponents
             if (_mcp != null && _mcp.Any())
                 args.Display.DrawPoints(_mcp, PointStyle.Square, 6, Color.White);
         }
-        protected override Bitmap Icon => null;
+        protected override Bitmap Icon => Properties.Resources.infMaxCrv;
         public override Guid ComponentGuid => new Guid("aefc361d-70bb-4a29-8489-89dbfd0fe91c");
     }
 }

@@ -127,6 +127,9 @@
   <data name="icon24X24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon24X24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="infMaxCrv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infMaxCrv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="isPrime" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isPrime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,6 +150,24 @@
   </data>
   <data name="srfSeam" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\srfSeam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subdivide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subdivide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subDLoft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subDLoft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subDOffset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subDOffset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subDSweep1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subDSweep1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subDSweep2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subDSweep2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subDToNurbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subDToNurbs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toSubDfrendly" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toSubDfrendly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

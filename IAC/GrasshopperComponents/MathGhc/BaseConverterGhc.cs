@@ -3,7 +3,7 @@ using Grasshopper.Kernel.Parameters;
 using System;
 using System.Linq;
 
-namespace IAC
+namespace IAC.GrasshopperComponents.MathGhc
 {
     public class BaseConverterGhc : GH_Component
     {
@@ -98,7 +98,7 @@ namespace IAC
             var result = 0.0;
             foreach (var c in str)
             {
-                result += Digits.IndexOf(c) * Math.Pow(radix, factor);
+                result += Digits.IndexOf(c) * System.Math.Pow(radix, factor);
                 factor--;
             }
 
@@ -140,8 +140,8 @@ namespace IAC
             for (var i = 0; i < 20; i++)
             {
                 var r = d * radix;
-                result += Digits[(int)Math.Truncate(r)];
-                d = r - Math.Truncate(r);
+                result += Digits[(int)System.Math.Truncate(r)];
+                d = r - System.Math.Truncate(r);
                 if (d == 0) break;
             }
             return result;

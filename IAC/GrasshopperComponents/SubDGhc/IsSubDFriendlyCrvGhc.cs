@@ -2,7 +2,7 @@
 using Rhino.Geometry;
 using System;
 
-namespace IAC
+namespace IAC.GrasshopperComponents.SubDGhc
 {
     public class IsSubDFriendlyCrvGhc : GH_Component
     {
@@ -26,6 +26,7 @@ namespace IAC
             da.SetData(0, crv.IsSubDFriendly);
         }
         protected override System.Drawing.Bitmap Icon => Properties.Resources.isSubDFriendly;
+        public override GH_Exposure Exposure => GH_Exposure.secondary;
         public override Guid ComponentGuid => new Guid("33ccd8b4-5e65-4d50-91f0-0fc7d36d9045");
     }
 }

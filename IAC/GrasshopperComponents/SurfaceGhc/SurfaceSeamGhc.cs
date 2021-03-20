@@ -2,7 +2,7 @@
 using Rhino.Geometry;
 using System;
 
-namespace IAC.GrasshopperComponents
+namespace IAC.GrasshopperComponents.SurfaceGhc
 {
     public class SurfaceSeamGhc : GH_Component
     {

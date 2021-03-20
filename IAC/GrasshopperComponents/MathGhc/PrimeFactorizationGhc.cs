@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace IAC
+namespace IAC.GrasshopperComponents.MathGhc
 {
     public class PrimeFactorizationGhc : GH_Component
     {
@@ -44,7 +44,7 @@ namespace IAC
                 factors.Add(2);
                 n /= 2;
             }
-            for (var i = 3; i <= Math.Sqrt(n); i += 2)
+            for (var i = 3; i <= System.Math.Sqrt(n); i += 2)
             {
                 while (n % i == 0)
                 {

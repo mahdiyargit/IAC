@@ -62,20 +62,32 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GrasshopperComponents\Curve\InfMaxCrvGhc.cs" />
-    <Compile Include="GrasshopperComponents\Math\BaseConverterGhc.cs" />
-    <Compile Include="GrasshopperComponents\Math\LCMGCDGhc.cs" />
-    <Compile Include="GrasshopperComponents\Math\IsPrimeGhc.cs" />
-    <Compile Include="GrasshopperComponents\SubD\ToSubDFriendlyCrvGhc.cs" />
-    <Compile Include="GrasshopperComponents\Math\PrimesInDomainGhc.cs" />
-    <Compile Include="GrasshopperComponents\Surface\SeamlessDiamondGhc.cs" />
-    <Compile Include="GrasshopperComponents\SubD\SubDFriendlyCrvGhc.cs" />
-    <Compile Include="GrasshopperComponents\Surface\SurfaceSeamGhc.cs" />
-    <Compile Include="GrasshopperComponents\SubD\IsSubDFriendlySrfGhc.cs" />
+    <Compile Include="GrasshopperComponents\CurveGhc\CircleBy2Spheres.cs" />
+    <Compile Include="GrasshopperComponents\CurveGhc\InfMaxCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\CurveGhc\RecByAreaPerimeterGhc.cs" />
+    <Compile Include="GrasshopperComponents\MathGhc\BaseConverterGhc.cs" />
+    <Compile Include="GrasshopperComponents\MathGhc\LCMGCDGhc.cs" />
+    <Compile Include="GrasshopperComponents\MathGhc\IsPrimeGhc.cs" />
+    <Compile Include="GrasshopperComponents\MathGhc\PolynomialSolverGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\IsSubDSolidGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\SubdivideGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\SubDLoftGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\SubDOffsetGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\SubDSweep1Ghc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\SubDSweep2Ghc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\SubDToNURBSGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\ToSubDFriendlyCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\MathGhc\PrimesInDomainGhc.cs" />
+    <Compile Include="GrasshopperComponents\SurfaceGhc\SeamlessDiamondGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\SubDFriendlyCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\SurfaceGhc\SurfaceSeamGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\IsSubDFriendlySrfGhc.cs" />
+    <Compile Include="GrasshopperComponents\UtilitiesGhc\AutoValueListGhc.cs" />
+    <Compile Include="GrasshopperComponents\UtilitiesGhc\LiveTextBox.cs" />
     <Compile Include="IACCategoryIcon.cs" />
     <Compile Include="IACInfo.cs" />
-    <Compile Include="GrasshopperComponents\Math\PrimeFactorizationGhc.cs" />
-    <Compile Include="GrasshopperComponents\SubD\IsSubDFriendlyCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\MathGhc\PrimeFactorizationGhc.cs" />
+    <Compile Include="GrasshopperComponents\SubDGhc\IsSubDFriendlyCrvGhc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -125,6 +137,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\seamlessDiamondPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subdivide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subDLoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subDOffset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subDSweep1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subDSweep2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subDToNurbs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infMaxCrv.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

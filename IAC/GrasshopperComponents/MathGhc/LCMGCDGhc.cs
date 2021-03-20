@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace IAC.GrasshopperComponents
+namespace IAC.GrasshopperComponents.MathGhc
 {
     public class LCMGCDGhc : GH_Component
     {

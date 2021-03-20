@@ -93,6 +93,16 @@ namespace IAC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap infMaxCrv {
+            get {
+                object obj = ResourceManager.GetObject("infMaxCrv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap isPrime {
             get {
                 object obj = ResourceManager.GetObject("isPrime", resourceCulture);
@@ -156,6 +166,66 @@ namespace IAC.Properties {
         internal static System.Drawing.Bitmap srfSeam {
             get {
                 object obj = ResourceManager.GetObject("srfSeam", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subdivide {
+            get {
+                object obj = ResourceManager.GetObject("subdivide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subDLoft {
+            get {
+                object obj = ResourceManager.GetObject("subDLoft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subDOffset {
+            get {
+                object obj = ResourceManager.GetObject("subDOffset", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subDSweep1 {
+            get {
+                object obj = ResourceManager.GetObject("subDSweep1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subDSweep2 {
+            get {
+                object obj = ResourceManager.GetObject("subDSweep2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subDToNurbs {
+            get {
+                object obj = ResourceManager.GetObject("subDToNurbs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

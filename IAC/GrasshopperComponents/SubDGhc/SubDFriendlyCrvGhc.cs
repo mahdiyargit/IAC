@@ -3,7 +3,7 @@ using Rhino.Geometry;
 using System;
 using System.Collections.Generic;
 
-namespace IAC.GrasshopperComponents
+namespace IAC.GrasshopperComponents.SubDGhc
 {
     public class SubDFriendlyCrvGhc : GH_Component
     {
@@ -49,6 +49,7 @@ namespace IAC.GrasshopperComponents
             da.SetData(2, crv.Domain);
         }
         protected override System.Drawing.Bitmap Icon => Properties.Resources.toSubDfrendly;
+        public override GH_Exposure Exposure => GH_Exposure.primary;
         public override Guid ComponentGuid => new Guid("3e0e7011-00f4-493f-9d1b-f7c42e2afb98");
     }
 }
