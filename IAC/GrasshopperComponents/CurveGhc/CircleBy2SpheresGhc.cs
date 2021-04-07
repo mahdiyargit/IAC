@@ -4,9 +4,9 @@ using System;
 
 namespace IAC.GrasshopperComponents.CurveGhc
 {
-    public class CircleBy2Spheres : GH_Component
+    public class CircleBy2SpheresGhc : GH_Component
     {
-        public CircleBy2Spheres() : base("Circle by 2 Spheres", "Circle", "The intersection circle of two sphere.", "IAC", "Curve")
+        public CircleBy2SpheresGhc() : base("Circle by 2 Spheres", "Circle", "The intersection circle of two spheres.", "IAC", "Curve")
         {
         }
         protected override void RegisterInputParams(GH_InputParamManager pManager)
@@ -40,7 +40,7 @@ namespace IAC.GrasshopperComponents.CurveGhc
                 pt2 = temp;
             }
             var b = pt1.DistanceTo(pt2);
-            //Area of triangle Heron’s formula
+
             var s = (a + b + c) / 2;
             var area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
             var h = 2 * area / b;
@@ -62,7 +62,7 @@ namespace IAC.GrasshopperComponents.CurveGhc
         }
 
         public override GH_Exposure Exposure => GH_Exposure.secondary;
-        protected override System.Drawing.Bitmap Icon => null;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.CircleSpheres;
         public override Guid ComponentGuid => new Guid("a139b206-10d6-4144-b2ff-e868a6b3859c");
     }
 }

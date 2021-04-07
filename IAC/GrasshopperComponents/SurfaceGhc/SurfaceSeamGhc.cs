@@ -18,7 +18,7 @@ namespace IAC.GrasshopperComponents.SurfaceGhc
         }
         protected override void SolveInstance(IGH_DataAccess da)
         {
-            Rhino.Geometry.Surface srf = null;
+            Surface srf = null;
             if (!da.GetData(0, ref srf)) return;
             var uv = Point3d.Unset;
             if (!da.GetData(1, ref uv)) return;

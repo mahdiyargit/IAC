@@ -146,6 +146,7 @@ namespace IAC.GrasshopperComponents.MathGhc
             }
             return result;
         }
+
         protected override System.Drawing.Bitmap Icon => Properties.Resources.baseConverter;
         public override Guid ComponentGuid => new Guid("1a59c965-fd3c-4fa5-9848-5ae9b6755a82");
     }

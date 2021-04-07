@@ -24,7 +24,7 @@ namespace IAC.GrasshopperComponents.SubDGhc
             if (!da.GetData(0, ref subd)) return;
             da.SetData(0, subd.IsSolid);
         }
-        protected override System.Drawing.Bitmap Icon => null;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.IsSubDSolid;
         public override GH_Exposure Exposure => GH_Exposure.secondary;
         public override Guid ComponentGuid => new Guid("ce374c52-ce57-4849-953d-0e51e9c6fe8a");
     }

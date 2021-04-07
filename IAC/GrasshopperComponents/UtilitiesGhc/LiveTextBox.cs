@@ -4,10 +4,10 @@ using System.Windows.Forms;
 
 namespace IAC.GrasshopperComponents.UtilitiesGhc
 {
-    public class LiveTextBox : GH_Component
+    public class LiveTextBoxGhc : GH_Component
     {
         private string _text;
-        public LiveTextBox() : base("Live Text Box", "LTB", "Live Text Box", "IAC", "Utilities")
+        public LiveTextBoxGhc() : base("Live Text Box", "LTB", "Live Text Box", "IAC", "Utilities")
         {
         }
         protected override void RegisterInputParams(GH_InputParamManager pManager)
@@ -35,7 +35,7 @@ namespace IAC.GrasshopperComponents.UtilitiesGhc
         private static void Menu_KeyDown(object sender, EventArgs e)
         {
         }
-        protected override System.Drawing.Bitmap Icon => null;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.LiveTextBox;
         public override Guid ComponentGuid => new Guid("382D2692-0E56-45BA-9644-5812B6D26701");
     }
 }

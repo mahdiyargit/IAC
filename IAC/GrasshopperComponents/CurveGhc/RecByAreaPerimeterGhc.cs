@@ -6,13 +6,13 @@ namespace IAC.GrasshopperComponents.CurveGhc
 {
     public class RecByAreaPerimeterGhc : GH_Component
     {
-        public RecByAreaPerimeterGhc() : base("Rectangle by Area Perimeter", "Rec", "Create a rectangle with certain area and/or perimeter",
+        public RecByAreaPerimeterGhc() : base("Rectangle by Area Perimeter", "Rec", "Create a rectangle with a certain area and/or perimeter",
               "IAC", "Curve")
         {
         }
         protected override void RegisterInputParams(GH_InputParamManager pManager)
         {
-            pManager.AddPlaneParameter("Plane", "P", "Rectangle base plane", GH_ParamAccess.item, Plane.WorldXY);
+            pManager.AddPlaneParameter("Plane", "P", "Rectangle's base plane", GH_ParamAccess.item, Plane.WorldXY);
             pManager.AddNumberParameter("Area", "A", "Optional area of rectangle", GH_ParamAccess.item, 12.0);
             pManager.AddNumberParameter("Perimeter", "P", "Optional perimeter of rectangle", GH_ParamAccess.item, 14.0);
             pManager[1].Optional = true;
@@ -64,7 +64,7 @@ namespace IAC.GrasshopperComponents.CurveGhc
             da.SetData(1, rec.Circumference);
         }
         public override GH_Exposure Exposure => GH_Exposure.secondary;
-        protected override System.Drawing.Bitmap Icon => null;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.RectangleAreaPerimeter;
         public override Guid ComponentGuid => new Guid("292a06bd-f038-48a9-9a5a-854c534bc792");
     }
 }

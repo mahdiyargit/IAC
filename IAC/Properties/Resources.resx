@@ -118,8 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AutoValueList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AutoValueList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="baseConverter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baseConverter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CircleSpheres" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CircleSpheres.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon16X16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon16X16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,20 +136,41 @@
   <data name="infMaxCrv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\infMaxCrv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="infMaxCrvPts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\infMaxCrvPts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IsConvex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IsConvex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="isPrime" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isPrime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="isSubDFriendly" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\isSubDFriendly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IsSubDFriendlySurf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IsSubDFriendlySurf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IsSubDSolid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IsSubDSolid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LCMGCD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LCMGCD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LiveTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LiveTextBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="polynominalSolver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\polynominalSolver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="primeFactorization" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\primeFactorization.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="primeInDomain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\primeInDomain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RectangleAreaPerimeter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RectangleAreaPerimeter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="seamlessDiamondPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seamlessDiamondPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,5 +198,8 @@
   </data>
   <data name="toSubDfrendly" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toSubDfrendly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

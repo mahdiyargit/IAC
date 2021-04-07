@@ -62,8 +62,9 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GrasshopperComponents\CurveGhc\CircleBy2Spheres.cs" />
+    <Compile Include="GrasshopperComponents\CurveGhc\CircleBy2SpheresGhc.cs" />
     <Compile Include="GrasshopperComponents\CurveGhc\InfMaxCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\CurveGhc\IsConvexGhc.cs" />
     <Compile Include="GrasshopperComponents\CurveGhc\RecByAreaPerimeterGhc.cs" />
     <Compile Include="GrasshopperComponents\MathGhc\BaseConverterGhc.cs" />
     <Compile Include="GrasshopperComponents\MathGhc\LCMGCDGhc.cs" />
@@ -78,8 +79,12 @@
     <Compile Include="GrasshopperComponents\SubDGhc\SubDToNURBSGhc.cs" />
     <Compile Include="GrasshopperComponents\SubDGhc\ToSubDFriendlyCrvGhc.cs" />
     <Compile Include="GrasshopperComponents\MathGhc\PrimesInDomainGhc.cs" />
+    <Compile Include="GrasshopperComponents\SurfaceGhc\ExtendSurfaceGhc.cs" />
+    <Compile Include="GrasshopperComponents\SurfaceGhc\SplitKinkyFaceGhc.cs" />
     <Compile Include="GrasshopperComponents\SurfaceGhc\SeamlessDiamondGhc.cs" />
     <Compile Include="GrasshopperComponents\SubDGhc\SubDFriendlyCrvGhc.cs" />
+    <Compile Include="GrasshopperComponents\SurfaceGhc\SplitFacesAtTangentsGhc.cs" />
+    <Compile Include="GrasshopperComponents\SurfaceGhc\SurfaceDiscontinuityGhc.cs" />
     <Compile Include="GrasshopperComponents\SurfaceGhc\SurfaceSeamGhc.cs" />
     <Compile Include="GrasshopperComponents\SubDGhc\IsSubDFriendlySrfGhc.cs" />
     <Compile Include="GrasshopperComponents\UtilitiesGhc\AutoValueListGhc.cs" />
@@ -96,47 +101,67 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\IMG_20210304_231327_960.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.png" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Resources\icon24X24.png" />
+    <None Include="Resources\AutoValueList.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\isPrime.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\primeFactorization.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMG_20210304_231327_960.png" />
+    <None Include="Resources\CircleSpheres.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon16X16.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\srfSeam.png" />
+    <None Include="Resources\icon24X24.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\baseConverter.png" />
+    <None Include="Resources\infMaxCrv.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LCMGCD.png" />
+    <None Include="Resources\infMaxCrvPts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsConvex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\isPrime.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\isSubDFriendly.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\primeInDomain.png" />
+    <None Include="Resources\IsSubDFriendlySurf.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\toSubDfrendly.png" />
+    <None Include="Resources\IsSubDSolid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LCMGCD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LiveTextBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primeFactorization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RectangleAreaPerimeter.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\seamlessDiamondPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\srfSeam.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\subdivide.png" />
@@ -157,7 +182,19 @@
     <None Include="Resources\subDToNurbs.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\infMaxCrv.png" />
+    <None Include="Resources\toSubDfrendly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primeInDomain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseConverter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polynominalSolver.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

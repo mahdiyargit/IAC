@@ -72,7 +72,7 @@ namespace IAC.GrasshopperComponents.UtilitiesGhc
             _doc.SolutionStart -= DocOnSolutionStart;
             _doc.RemoveObject(this, true);
         }
-        protected override System.Drawing.Bitmap Icon => null;
+        protected override System.Drawing.Bitmap Icon => Properties.Resources.AutoValueList;
         public override Guid ComponentGuid => new Guid("57c3c434-fddc-47a9-aa87-67e5deb3958b");
     }
 }
